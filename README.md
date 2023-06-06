@@ -122,4 +122,4 @@ I would like to thank everyone!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
