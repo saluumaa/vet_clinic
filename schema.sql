@@ -57,7 +57,6 @@ CREATE TABLE specializations (
 );
 
 --- create a table to store the relationship between vets and animals
-
 CREATE TABLE visits(
 id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 vet_id INT REFERENCES vets(id),
