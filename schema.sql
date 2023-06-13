@@ -63,3 +63,6 @@ vet_id INT REFERENCES vets(id),
 animals_id INT REFERENCES animals(id),
 visit_date DATE
 );
+
+
+CREATE INDEX ON visits (animal_id);
