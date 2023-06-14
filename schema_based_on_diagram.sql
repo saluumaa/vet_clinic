@@ -33,3 +33,5 @@ CREATE TABLE treatments (
   type VARCHAR(100),
   name VARCHAR(100),
 );
+
+CREATE INDEX indx_invoice_items ON invoice_items (invoice_id);
