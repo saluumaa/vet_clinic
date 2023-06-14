@@ -34,7 +34,7 @@ CREATE TABLE treatments (
   name VARCHAR(100),
 );
 
---foreign key 
+--foreign key Index
 CREATE INDEX indx_invoice_items ON invoice_items (invoice_id);
 CREATE INDEX ON medical_history (patient_id);
 CREATE INDEX ON invoices (medical_history_id);
