@@ -34,8 +34,16 @@ CREATE TABLE treatments (
   name VARCHAR(100),
 );
 
+CREATE TABLE treatments_medical_history (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  treatment_id INT REFERENCES treatments(id),
+  medical_history_id INT REFERENCES medical_history(id),
+);
+
 --foreign key Index
-CREATE INDEX indx_invoice_items ON invoice_items (invoice_id);
 CREATE INDEX ON medical_history (patient_id);
 CREATE INDEX ON invoices (medical_history_id);
+CREATE INDEX indx_invoice_items ON invoice_items (invoice_id);
 CREATE INDEX ON invoice_items (treatment_id);
+CREATE INDEX ON treatments_medical_history (treatment_id);
+CREATE INDEX ON treatments_medical_history (medical_history_id);
